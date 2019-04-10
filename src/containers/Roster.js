@@ -27,7 +27,7 @@ const STREAMER_QUERY = gql`
     }
   }
 `;
-const Roster = props => {
+const Roster = () => {
   const [selectedStreamer, setSelectedStreamer] = useState(0);
   return (
     <div style={{ display: "flex", flexDirection: "row", width: "100%" }}>

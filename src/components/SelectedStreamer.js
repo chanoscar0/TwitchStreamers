@@ -1,7 +1,9 @@
 import React from "react";
 import gql from "graphql-tag";
 import { Query } from "react-apollo";
-const SelectedStreamer = ({ influencer }) => {
+import PropTypes from 'prop-types';
+
+const SelectedStreamer = ({influencer}) => {
   const divStyle = {
     display: "inline-flex",
     float: "right",
@@ -29,4 +31,9 @@ const SelectedStreamer = ({ influencer }) => {
     </div>
   );
 };
+
+SelectedStreamer.propTypes = {
+  influencer: PropTypes.object,
+}
+
 export default SelectedStreamer;

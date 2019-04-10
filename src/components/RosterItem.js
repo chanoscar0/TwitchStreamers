@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const RosterItem = props => {
   const {
@@ -70,5 +71,21 @@ const RosterItem = props => {
     </div>
   );
 };
+
+RosterItem.propTypes = {
+  id: PropTypes.number,
+  avatar: PropTypes.string,
+  handle: PropTypes.string,
+  viewers: PropTypes.number,
+  setSelectedStreamer: PropTypes.func,
+  selectedStreamer: PropTypes.number
+}
+RosterItem.defaultProps = {
+  id: 0,
+  avatar: '',
+  handle: '',
+  viewers: 0,
+  selectedStreamer: 0
+}
 
 export default RosterItem;
