@@ -16,14 +16,15 @@ const RosterItem = props => {
     alignItems: "center",
     width: "100%",
     height: "50px",
-    border: "1px solid black"
+    border: "5px solid black"
   };
   const normalStreamerStyle = {
     display: "inline-flex",
     flexDirection: "row",
     alignItems: "center",
     width: "100%",
-    height: "50px"
+    height: "50px",
+    border: "1px solid white"
   };
   return (
     <div
@@ -52,7 +53,7 @@ const RosterItem = props => {
           display: "inline-block"
         }}
       >
-        Avg Twitch Viewers: {viewers}
+        Avg. Twitch Viewers: {viewers}
       </p>
       <button
         style={{ marginLeft: "auto", marginRight: "5px" }}
@@ -65,7 +66,6 @@ const RosterItem = props => {
           });
         }}
       >
-        {" "}
         More Details
       </button>
     </div>
